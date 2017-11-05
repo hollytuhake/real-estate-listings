@@ -1,0 +1,16 @@
+<div>
+    <div class="viewtitlediv">
+         <h2 class="viewtitle">Properties For Sale</h2>
+    </div>
+    <div class="property" ng-repeat="listing in pc.listings">
+        <h3 class="city">
+            {{listing.city}}
+        </h3>
+        <p class="Price">
+           ${{listing.cost}}
+        </p>
+        <p class="sqft">
+            {{listing.sqft}} square ft.
+        </p>
+    </div>
+</div>

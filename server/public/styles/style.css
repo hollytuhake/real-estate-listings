@@ -1,0 +1,37 @@
+#brandname{
+    color:moccasin;
+    margin: auto;
+    text-align: center
+}
+
+#branddetail{
+    color:rgb(230, 205, 163);
+    margin: auto;
+    text-align: center
+}
+
+.viewtitle{
+    text
+    text-align: center;
+    color: slategray;
+    background-color:whitesmoke
+}
+
+.property{
+    margin: 20px;
+    color: slategray
+}
+
+.jumbotron{
+    background-color: cornflowerblue;
+    text-align: center
+}
+
+a, span{
+    color:rgb(230, 205, 163);
+    margin: auto;
+}
+
+main{
+    background-color: moccasin;
+}
