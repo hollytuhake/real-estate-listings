@@ -4,17 +4,15 @@
     text-align: center
 }
 
-#branddetail{
-    color:rgb(230, 205, 163);
-    margin: auto;
-    text-align: center
-}
-
 .viewtitle{
-    text
+    padding:10px;
     text-align: center;
     color: slategray;
     background-color:whitesmoke
+}
+
+.viewtitlediv{
+    margin: 0px;
 }
 
 .property{
@@ -22,16 +20,26 @@
     color: slategray
 }
 
+
+
 .jumbotron{
     background-color: cornflowerblue;
-    text-align: center
+    text-align: center;
+    margin: 0px
 }
 
-a, span{
-    color:rgb(230, 205, 163);
+a{
+    color:rgb(223, 218, 210);
     margin: auto;
 }
 
 main{
     background-color: moccasin;
+    margin: 0px
+}
+
+#branddetail, span{
+    color:rgb(224, 188, 129);
+    margin: auto;
+    text-align: center
 }

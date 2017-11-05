@@ -4,14 +4,15 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var RentalSchema = new Schema({ rent: Number, sqft: Number, city: String });
-// Litings links us to our collection
-// We pass in ListingsSchema
-// listings is our collection
-var Rental = mongoose.model('Rental', RentalSchema, 'rentals');
+var RentalsSchema = new Schema({ rent: Number, sqft: Number, city: String });
+// Rentals links us to our collection
+// We pass in RentalSchema
+// rentals is our collection
+var Rental = mongoose.model('Rental', RentalsSchema, 'rentals');
+console.log('in rentals router');
 
 router.get('/', function (req, res) {
-    Listing.find({}, function (err, foundRentals) {
+    Rental.find({}, function (err, foundRentals) {
         if (err) {
             console.log('Error', err);
             res.sendStatus(500);

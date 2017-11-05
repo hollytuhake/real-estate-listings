@@ -1,13 +1,13 @@
 <div>
     <div class="viewtitlediv">
-         <h2 class="viewtitle">Properties For Sale</h2>
+         <h3 class="viewtitle">Properties For Sale</h3>
     </div>
-    <div class="property" ng-repeat="listing in pc.listings">
+    <div class="property" ng-repeat="listing in lc.listings">
         <h3 class="city">
             {{listing.city}}
         </h3>
-        <p class="Price">
-           ${{listing.cost}}
+        <p id="currency-default" class="Price">
+           {{listing.cost | currency}}
         </p>
         <p class="sqft">
             {{listing.sqft}} square ft.

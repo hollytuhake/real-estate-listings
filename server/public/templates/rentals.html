@@ -1,14 +1,16 @@
 <div>
-    <h2>For Rent</h2>
-    <div ng-repeat="listing in ">
-        <div class="city">
-            {{}}
-        </div>
-        <div class="Price">
-            {{}}
-        </div>
-        <div class="sqft">
-            {{}}
-        </div>
+    <div class="viewtitlediv">
+        <h3 class="viewtitle">Properties For Rent</h3>
     </div>
-</div>
+    <div class="property" ng-repeat="rental in rc.rentals">
+        <h3 class="city">
+            {{rental.city}}
+        </h3>
+        <p id="currency-default" class="Price">
+            {{rental.rent | currency}}
+        </p>
+        <p class="sqft">
+            {{rental.sqft}} square ft.
+        </p>
+    </div>
+ </div>

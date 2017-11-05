@@ -1,12 +1,11 @@
-app.controller('PropertyController', ['$http', function ($http) {
-    console.log('PropertyController created.');
+app.controller('ListingsController', ['$http', function ($http) {
+    console.log('ListingsController created.');
     var self = this;
     self.newProperty = {};
     self.property = [];
     self.show = false;
 
-    
-    self.refreshProperties = function () {
+    self.refreshListings = function (getRoute) {
         $http.get('/listings').then(function (response) {
             console.log(response.data);
             self.listings = response.data;
@@ -15,6 +14,6 @@ app.controller('PropertyController', ['$http', function ($http) {
         });
     };
 
-    self.refreshProperties();
+    self.refreshListings();
 
 }]);

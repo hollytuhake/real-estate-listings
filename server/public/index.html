@@ -9,7 +9,7 @@
         <script type="text/javascript" src="/vendors/angular.min.js"></script>
         <script src="vendors/angular-route.min.js"></script>
         <script type="text/javascript" src="/scripts/client.js"></script>
-        <script type="text/javascript" src="/scripts/controllers/property.controller.js"></script>
+        <script type="text/javascript" src="/scripts/controllers/listings.controller.js"></script>
         <script type="text/javascript" src="/scripts/controllers/rentals.controller.js"></script>
         <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
         <link rel="stylesheet" href="/styles/style.css" />
@@ -17,9 +17,9 @@
     <body ng-app="app">
         <div class="jumbotron">
         <h1 id="brandname">Good Deal Real Estate</h1>
-        <a id="branddetail" >Check out our Properties</a>
+        <span id="branddetail" >Check out our Properties</span>
             <a href="/#!/listings">For Sale</a>
-            <span> |                  | </span>
+            <span> || </span>
             <a href="/#!/rentals">For Rent</a>
         </div>
         <main ng-view></main>
