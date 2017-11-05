@@ -21,11 +21,15 @@ app.controller('ListingsController', ['$http', function ($http) {
         console.log('in addListing');
         $http.post('/listings', listingToAdd).then(function (response) {
             console.log('Added Listing');
+            swal("Excellent!", "Your listing has been added.", "success");
         }).catch(function (err) {
             console.log('Add Listing Failed!');
         })
         self.refreshListings();
     }
 
+    self.showAdd = function(){
+        self.show = !self.show;
+    }
 
 }]);

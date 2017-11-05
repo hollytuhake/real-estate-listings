@@ -22,10 +22,15 @@ app.controller('RentalsController', ['$http', function ($http) {
         console.log('in addRental');
         $http.post('/rentals', rentalToAdd).then(function (response) {
             console.log('Added Rental');
+            swal("Excellent!", "Your rental has been added.", "success");
         }).catch(function (err) {
             console.log('Add Rental Failed!');
         })
         self.refreshRentals();
+    }
+
+    self.showAdd = function () {
+        self.show = !self.show;
     }
 
 }]);

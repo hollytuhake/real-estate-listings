@@ -1,4 +1,6 @@
-<div class="viewtitlediv">
+<button ng-click="lc.showAdd()" class="btn btn-primary">Add Listing</button>
+
+<div class="viewtitlediv" ng-show="lc.show">
     <h4 class="viewtitle">ADD NEW LISTING</h4>
     <form class="row" ng-submit="lc.addListing(lc.newListing)">
         <div class="col-md-3" class="inputs">
@@ -12,7 +14,7 @@
             <input type="number" ng-model="lc.newListing.sqft" name="size" id="size" placeholder="i.e. 1200">sqft
         </div>
         <div class="col-md-6 forBtn">
-            <button class="btn btn-primary add">Add Listing</button>
+            <button class="btn btn-primary add">Submit Listing</button>
         </div>
     </form>
 </div>
