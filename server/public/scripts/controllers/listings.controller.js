@@ -1,8 +1,8 @@
 app.controller('ListingsController', ['$http', function ($http) {
     console.log('ListingsController created.');
     var self = this;
-    self.newProperty = {};
-    self.property = [];
+    self.newListing = {};
+    self.listing = [];
     self.show = false;
 
     self.refreshListings = function (getRoute) {
@@ -15,5 +15,17 @@ app.controller('ListingsController', ['$http', function ($http) {
     };
 
     self.refreshListings();
+
+    self.addListing = function (listingToAdd) {
+        console.log(listingToAdd);
+        console.log('in addListing');
+        $http.post('/listings', listingToAdd).then(function (response) {
+            console.log('Added Listing');
+        }).catch(function (err) {
+            console.log('Add Listing Failed!');
+        })
+        self.refreshListings();
+    }
+
 
 }]);

@@ -17,4 +17,15 @@ app.controller('RentalsController', ['$http', function ($http) {
 
     self.refreshRentals();
 
+    self.addRental = function (rentalToAdd) {
+        console.log(rentalToAdd);
+        console.log('in addRental');
+        $http.post('/rentals', rentalToAdd).then(function (response) {
+            console.log('Added Rental');
+        }).catch(function (err) {
+            console.log('Add Rental Failed!');
+        })
+        self.refreshRentals();
+    }
+
 }]);

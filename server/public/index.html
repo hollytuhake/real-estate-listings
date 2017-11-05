@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="/vendors/angular.min.js"></script>
         <script src="vendors/angular-route.min.js"></script>
+        <script src="vendors/sweetalert.min.js"></script>
         <script type="text/javascript" src="/scripts/client.js"></script>
         <script type="text/javascript" src="/scripts/controllers/listings.controller.js"></script>
         <script type="text/javascript" src="/scripts/controllers/rentals.controller.js"></script>
@@ -16,12 +17,16 @@
     </head>
     <body ng-app="app">
         <div class="jumbotron">
-        <h1 id="brandname">Good Deal Real Estate</h1>
-        <span id="branddetail" >Check out our Properties</span>
+            <div class="brandname" id="logo">
+                <h1 class="brandname">Good Deal</h1>
+                <h3 class="brandname">REAL ESTATE</h2>
+            </div>
             <a href="/#!/listings">For Sale</a>
             <span> || </span>
             <a href="/#!/rentals">For Rent</a>
         </div>
+        <div>
+        
         <main ng-view></main>
     </body>
 </html>

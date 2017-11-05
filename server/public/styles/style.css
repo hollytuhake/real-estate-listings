@@ -1,14 +1,33 @@
-#brandname{
+body{
+    background-color: moccasin;
+}
+
+.brandname{
     color:moccasin;
     margin: auto;
     text-align: center
 }
 
+#logo{
+
+}
+
 .viewtitle{
     padding:10px;
-    text-align: center;
-    color: slategray;
+    color: cornflowerblue;
     background-color:whitesmoke
+}
+
+.inserts{
+    float: left;
+}
+
+.forBtn{
+    height: 20px
+}
+
+.add{
+    margin: 3px
 }
 
 .viewtitlediv{
@@ -17,7 +36,8 @@
 
 .property{
     margin: 20px;
-    color: slategray
+    color: slategray;
+    border-bottom: thick solid cornflowerblue;
 }
 
 

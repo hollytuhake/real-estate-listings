@@ -1,13 +1,33 @@
+<div class="viewtitlediv">
+    <h4 class="viewtitle">ADD NEW RENTAL</h4>
+    <form class="row" ng-submit="rc.addRental(rc.newRental)">
+        <div class="col-md-3" class="inputs">
+            <label for="city">City Located:</label>
+            <input type="text" ng-model="rc.newRental.city" name="city" id="city" placeholder="i.e. Minneapolis">
+            <br>
+            <label for="price">Yearly Rent:</label>
+            $
+            <input ng-model="rc.newRental.rent" type="number" name="price" id="price" placeholder="i.e. 1200">
+            <br>
+            <label for="size">Size:</label>
+            <input type="number" ng-model="rc.newRental.sqft" name="size" id="size" placeholder="i.e. 2000">sqft
+        </div>
+        <div class="col-md-6 forBtn">
+            <button class="btn btn-primary add">Add Listing</button>
+        </div>
+    </form>
+</div>
+
 <div>
     <div class="viewtitlediv">
-        <h3 class="viewtitle">Properties For Rent</h3>
+        <h3 class="viewtitle">PROPERTIES FOR RENT</h3>
     </div>
     <div class="property" ng-repeat="rental in rc.rentals">
         <h3 class="city">
             {{rental.city}}
         </h3>
         <p id="currency-default" class="Price">
-            {{rental.rent | currency}}
+            {{rental.rent/12 | currency}} monthly
         </p>
         <p class="sqft">
             {{rental.sqft}} square ft.
