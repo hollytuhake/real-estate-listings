@@ -9,6 +9,7 @@ app.controller('ListingsController', function (RealEstateService) {
 
     self.addListing = function(listingToAdd){
         RealEstateService.addListing(listingToAdd);
+        RealEstateService.refreshListings();
     }
 
     RealEstateService.refreshListings();
