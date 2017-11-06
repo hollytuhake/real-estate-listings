@@ -12,6 +12,10 @@ button{
     margin: 3px;
 }
 
+label{
+    color:slategray
+}
+
 .viewtitle{
     padding:10px;
     color: cornflowerblue;
