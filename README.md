@@ -22,12 +22,11 @@ Open the file. In Terminal, type npm install.
 Link to software that is required before you attempt to start the app (e.g. node, mongo).
 
 - [Node.js](https://nodejs.org/en/)
-- Bootstrap
-- Angular
-- Angular Routes
-- sweetalerts
-- mongoose
-- mongo
+- [Bootstrap] (http://getbootstrap.com/)
+- [Angular] (https://angular.io/)
+- [sweetalerts] (https://sweetalert.js.org/)
+- [mongoose] (http://mongoosejs.com/)
+- [mongo] (https://www.mongodb.com/)
 
 
 ### Installing
@@ -43,6 +42,7 @@ Steps to get the development environment running.
 - [x]  Create a Full Stack application from the ground up using Angular, Node, Express, and MongoDB.
 - [x]  Allow user to manipulate database through input fields to add new properties.
 - [x]  Using a service for the listings controller.
+- [x]  Deploy to Heroku using mLab for database.
 
 ### Next Steps
 
