@@ -22,11 +22,11 @@ Open the file. In Terminal, type npm install.
 Link to software that is required before you attempt to start the app (e.g. node, mongo).
 
 - [Node.js](https://nodejs.org/en/)
-- [Bootstrap] (http://getbootstrap.com/)
-- [Angular] (https://angular.io/)
-- [sweetalerts] (https://sweetalert.js.org/)
-- [mongoose] (http://mongoosejs.com/)
-- [mongo] (https://www.mongodb.com/)
+- [Bootstrap](http://getbootstrap.com/)
+- [Angular](https://angular.io/)
+- [sweetalerts](https://sweetalert.js.org/)
+- [mongoose](http://mongoosejs.com/)
+- [mongo](https://www.mongodb.com/)
 
 
 ### Installing
