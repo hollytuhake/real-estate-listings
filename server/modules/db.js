@@ -21,7 +21,7 @@ mongoose.connection.on('error', function () {
     console.log('Mongoose failed to connect');
 });
 
-mongoose.connect(databaseUrl);
+mongoose.connect(mongoURI);
 
 //not rilly necessary
 module.exports = mongoose;
