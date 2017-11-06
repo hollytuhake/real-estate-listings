@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var listings = require('./routes/listings.router.js');
 var rentals = require('./routes/rentals.router.js');
 var port = process.env.PORT || 5000;
-// Mongoose moved to module
+// Mongoose moved to module, once required that code will run
 var db = require('./modules/db.js');
 
 
